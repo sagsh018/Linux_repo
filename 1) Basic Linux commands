@@ -1,0 +1,50 @@
+So lets start with some of the basic linux commands which we use in our day to day lifes.
+
+Like
+1) date ==>  Use to check date of a system. various versions of this commands
+    date +%d
+    date +%m
+    date +%y
+    date +%r
+    date +%F
+    and many more
+2) Then we also have command to see the calander inside linux syster
+    cal 
+    cal 2020 // This will show calander for entire 2020
+3) lsblk // To procide disk information.
+4) fdisk -l // To show the disk information as well
+5) /proc/cpuinfo // Used to provide entire information regarding cpu
+6) free -m // to check swap size and memory information
+7) free -h // provide memory details in GB
+8) /proc/partitions --> Gives details about partitions
+9) lscpu -- Again for cpu information
+10) To get the hostname of the server (or) the FQDN use below command   
+    # hostname
+11) # hostname -s // for short hostname.
+12) # ifconfig -a // displays all interfaces which are currently available, even if down
+13) # ifconfig // displays all interfaces which are currently available and are up.
+14) # ip addr show, ip addr, ip a // Also shows all the virtual IP's assigned to a interfaces
+15) ls (List)
+16) ls -l (or) ll ==> long List
+17) su ==> to switch tot some oother user. ex: su - student
+18) wc ==> Usd to count words, lines, and characters in a file
+    wc -l // to count a lines
+    wc -w // to count number for words
+    wc -c // to count number of characters.
+    wc /etc/passwd
+    o/p ==> 40      79      2071        /etc/passwd
+            lines   words   characters  name if file.
+19)Types of terminales
+    a) pseudo  terminal : 
+        /dev/pts/X //representation
+        to open let say second psueodo terminal, i.e. tty2 use : ctrl+alt+t. The inside that terminal run "tty" to check
+        the current terminal number. and that will show /dev/pts/1,2,3,.... and so on.other psueado 
+        To switch between one psuedo to other psuodo terminal use below command
+        ctrl+pageup and ctrl+pagedown.
+    b) virtual terminal : 
+        /dev/ttyX // representation
+        To open second virtual terminal . i.e. tty2 use : Ctrl+alt+F2. then insie that terminal run tty to check the 
+        terminal number.
+    20) history command to check the history of commands ran on the system with respective user ID.
+        # history -c ==> to lear the history.
+    
